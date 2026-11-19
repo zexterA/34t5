@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "identify_interval": 5.0,
+    "leave_on_shutdown": true,
+    "random_event": false,
+    "state_path": "state.json"
+  },
+  "control_bot": {
+    "token": "",
+    "owner_ids": ["000000000000000000"],
+    "command_guild_ids": ["000000000000000000"]
+  },
+  "default_target": { "guild_id": "000000000000000000", "channel_id": "000000000000000000" },
+  "accounts": [
+    { "name": "main", "token_env": "VK_TOKEN_MAIN" },
+    {
+      "name": "alt",
+      "token_env": "VK_TOKEN_ALT",
+      "target": { "guild_id": "000000000000000000", "channel_id": "000000000000000000" },
+      "flags": { "mute": true, "deaf": false, "video": false, "stream": false }
+    }
+  ]
+}
